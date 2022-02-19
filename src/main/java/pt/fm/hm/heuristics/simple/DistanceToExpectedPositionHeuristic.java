@@ -22,7 +22,7 @@ public class DistanceToExpectedPositionHeuristic extends SolvedColumnsMoreWeight
             tot += dist;
 
         }
-        column.setHeuristic(tot/cards.size());
+        column.setHeuristic((tot-1)/13);
         return column.getHeuristic();
     }
 }
